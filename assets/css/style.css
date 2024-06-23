@@ -62,6 +62,7 @@ section:nth-child(odd) {
     flex-direction: column;
     width: 80%;
     max-width: 800px;
+    text-align: left;
 }
 
 .portrait {
