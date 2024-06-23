@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    text-align: center;
 }
 
 header {
@@ -41,6 +42,7 @@ nav ul li a {
 section {
     padding: 4rem 2rem;
     margin-top: 4rem;
+    text-align: center;
 }
 
 section:nth-child(even) {
@@ -49,6 +51,23 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
     background: #fff;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portrait {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.text {
+    max-width: 600px;
 }
 
 footer {
