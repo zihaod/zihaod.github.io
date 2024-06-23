@@ -11,6 +11,10 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -20,10 +24,12 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
 
@@ -32,8 +38,17 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 2rem;
+section {
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+section:nth-child(even) {
+    background: #e2e2e2;
+}
+
+section:nth-child(odd) {
+    background: #fff;
 }
 
 footer {
@@ -41,7 +56,12 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
